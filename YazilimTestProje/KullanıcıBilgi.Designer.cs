@@ -239,6 +239,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "KullanıcıBilgi";
             this.Text = "KullanıcıBilgi";
+            this.Load += new System.EventHandler(this.KullanıcıBilgi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
