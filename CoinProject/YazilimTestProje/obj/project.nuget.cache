@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "noRMUhoJMd5/C5Iyn4EHgsfIluFntZedrCs2RaU9EQextb8s3S9S8tXS+K4AHKuC6UC9KRCvxGYxlYqwz2bytA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\xmloz\\Source\\Repos\\CoinProject\\YazilimTestProje\\YazilimTestProje.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\xmloz\\.nuget\\packages\\devart.data\\5.0.2938\\devart.data.5.0.2938.nupkg.sha512",
+    "C:\\Users\\xmloz\\.nuget\\packages\\devart.data.postgresql\\8.0.0\\devart.data.postgresql.8.0.0.nupkg.sha512",
+    "C:\\Users\\xmloz\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\xmloz\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "C:\\Users\\xmloz\\.nuget\\packages\\system.configuration.configurationmanager\\4.5.0\\system.configuration.configurationmanager.4.5.0.nupkg.sha512",
+    "C:\\Users\\xmloz\\.nuget\\packages\\system.diagnostics.performancecounter\\4.5.0\\system.diagnostics.performancecounter.4.5.0.nupkg.sha512",
+    "C:\\Users\\xmloz\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.0\\system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
+    "C:\\Users\\xmloz\\.nuget\\packages\\system.security.accesscontrol\\4.5.0\\system.security.accesscontrol.4.5.0.nupkg.sha512",
+    "C:\\Users\\xmloz\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.5.0\\system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
+    "C:\\Users\\xmloz\\.nuget\\packages\\system.security.permissions\\4.5.0\\system.security.permissions.4.5.0.nupkg.sha512",
+    "C:\\Users\\xmloz\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512",
+    "C:\\Users\\xmloz\\.nuget\\packages\\system.text.encoding.codepages\\4.5.0\\system.text.encoding.codepages.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
