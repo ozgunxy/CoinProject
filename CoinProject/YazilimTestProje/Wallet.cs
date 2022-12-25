@@ -22,7 +22,6 @@ namespace YazilimTestProje
                 Address = sha256.ComputeHash(System.Text.Encoding.UTF8.GetBytes(Owner));
             }
         }
-
         public void AddCoin(Coin coin)
         {
             Coins.Add(coin);

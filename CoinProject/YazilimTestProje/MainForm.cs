@@ -72,5 +72,13 @@ namespace YazilimTestProje
         {
             formcontrol();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            DonusumFormu forms = new DonusumFormu();
+            forms.user = user;
+            forms.Show();
+            this.Hide();
+        }
     }
 }

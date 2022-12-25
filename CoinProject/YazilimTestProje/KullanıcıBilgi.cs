@@ -21,6 +21,22 @@ namespace YazilimTestProje
         public User user;
         private void KullanıcıBilgi_Load(object sender, EventArgs e)
         {
+            PgSqlConnection conn = new PgSqlConnection("User Id=postgres;password=admin;Host=localhost;Port=8081;Database=INFO;Initial Schema=public");
+            PgSqlCommand cmd = new PgSqlCommand("SELECT * FROM usersviews('" + user.UserID + "'); ",conn);
+            PgSqlDataReader reader;
+            conn.Open();
+            reader = cmd.ExecuteReader();
+
+            while(reader.Read())
+            {
+                label3.Text = reader.GetString(0);
+                label7.Text = reader.GetString(1);
+                label8.Text = reader.GetString(2);
+                label9.Text = reader.GetString(3);
+                label10.Text = reader.GetString(4) + "RC";
+            }
+
+
 
         }
         MainForm mf = new MainForm();
