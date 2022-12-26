@@ -31,5 +31,8 @@
     <Compile Update="ParaTransfer.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="WalletForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

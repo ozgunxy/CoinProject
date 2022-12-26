@@ -34,5 +34,25 @@ namespace YazilimTestProje
         {
             formcontrol();
         }
+       public Admin admin;
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AdminKullaniciYonetimFormu akyf = new AdminKullaniciYonetimFormu();
+            akyf.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AdminMeterialYönetimFormu amyf = new AdminMeterialYönetimFormu();
+            amyf.Show();
+            this.Hide();
+        }
+
+        private void AdminMainMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

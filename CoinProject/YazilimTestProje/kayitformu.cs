@@ -40,6 +40,9 @@ namespace YazilimTestProje
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+ 
             if((long)DB.getInstance().executeScalar("SELECT COUNT(*) from public.users where userloginid = '"+textBox2.Text+"'") >0)
             {
                 MessageBox.Show("This UserName is already used,please try again");
@@ -53,6 +56,12 @@ namespace YazilimTestProje
             forms.user = user;
             forms.Show();
             this.Hide();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         private void kayitformu_Load(object sender, EventArgs e)

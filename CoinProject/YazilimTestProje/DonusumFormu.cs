@@ -45,6 +45,9 @@ namespace YazilimTestProje
         public User user;
         private void DonusumFormu_Load(object sender, EventArgs e)
         {
+
+            try
+            {
             button1.Enabled = false;
             PgSqlConnection conn = new PgSqlConnection("User Id=postgres;password=admin;Host=localhost;Port=8081;Database=INFO;Initial Schema=public");
             PgSqlCommand cmd = new PgSqlCommand("SELECT * FROM usersviews('" + user.UserID + "'); ", conn);
@@ -73,25 +76,21 @@ namespace YazilimTestProje
 
                 comboBox2.Items.Add(reader1.GetString(0));
             }
-            conn.Close();
+            conn.Close(); 
+            }
+            catch (Exception)
+            {
 
-            //PgSqlCommand cmxx = new PgSqlCommand("SELECT materialtypename FROM materialtype ", conn);
-            //PgSqlDataReader reader11;
-
-            //conn.Open();
-            //reader11 = cmxx.ExecuteReader();
-            //while (reader11.Read())
-            //{
-
-            //    comboBox1.Items.Add(reader11.GetString(0));
-            //}
-            //conn.Close();
-            
-              
+                throw;
+            }
+                
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+            try
+            {
             string xx = (string)comboBox2.SelectedItem;
             string yy = (string)comboBox1.SelectedItem;
             if (xx  == null ||yy  == null)
@@ -105,6 +104,15 @@ namespace YazilimTestProje
                 return;
             }
 
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
+            
+            
 
             string x = comboBox2.SelectedItem.ToString();
             
@@ -134,6 +142,9 @@ namespace YazilimTestProje
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            try
+            {
             decimal Rc = Convert.ToDecimal(label15.Text);
             Coin coin = new Coin("Rc", Rc, user.UserName);
             user.wallet.AddCoin(coin);
@@ -143,6 +154,14 @@ namespace YazilimTestProje
 
             textBox2.Text = "";
             button1.Enabled = false;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)

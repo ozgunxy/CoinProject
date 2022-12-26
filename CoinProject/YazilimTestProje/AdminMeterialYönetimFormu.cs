@@ -34,5 +34,10 @@ namespace YazilimTestProje
         {
             formcontrol();
         }
+
+        private void AdminMeterialYönetimFormu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

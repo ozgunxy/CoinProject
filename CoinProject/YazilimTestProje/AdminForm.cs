@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Devart.Data.PostgreSql;
+using Devart.Data;
+using Devart.Common;
 namespace YazilimTestProje
 {
     public partial class AdminForm : Form
@@ -33,6 +35,34 @@ namespace YazilimTestProje
         private void button2_Click(object sender, EventArgs e)
         {
             formcontrol();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PgSqlConnection conn = new PgSqlConnection("User Id=postgres;password=admin;Host=localhost;Port=8081;Database=INFO;Initial Schema=public");
+            //PgSqlCommand com = new PgSqlCommand("SELECT * FROM public.Users where UserLoginId = '" + textBox1.Text + "' and UserPassword = '" + textBox2.Text + "'", conn);
+            PgSqlDataAdapter add = new PgSqlDataAdapter("SELECT * FROM public.users where UserLoginId = '" + textBox1.Text + "' and UserPassword = '" + textBox2.Text + "'", conn);
+            DataTable dt = new DataTable();
+            add.Fill(dt);
+
+            if (dt.Rows.Count > 0)
+            {
+                Admin admin = new Admin();
+                admin.adminUserName = textBox1.Text;
+                AdminMainMenu forms = new AdminMainMenu();
+                forms.admin = admin;
+                forms.Show();
+                this.Hide();                                                          
+            }
+            else
+            {
+                MessageBox.Show("ERORR");
+            }
+        }
+
+        private void AdminForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

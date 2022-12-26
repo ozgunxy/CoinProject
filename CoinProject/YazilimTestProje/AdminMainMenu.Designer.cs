@@ -66,6 +66,7 @@
             this.button2.TabIndex = 33;
             this.button2.Text = "Meteryal Yönetim Paneli";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -79,6 +80,7 @@
             this.button1.TabIndex = 32;
             this.button1.Text = "Kullanıcı Yönetim paneli";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -138,6 +140,7 @@
             this.Name = "AdminMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminMainMenu";
+            this.Load += new System.EventHandler(this.AdminMainMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);

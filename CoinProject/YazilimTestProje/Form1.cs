@@ -55,5 +55,13 @@ namespace YazilimTestProje
             kf.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AdminForm admin = new AdminForm();
+            admin.Show();
+            this.Hide();
+           
+        }
     }
 }

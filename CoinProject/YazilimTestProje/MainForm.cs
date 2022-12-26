@@ -80,5 +80,13 @@ namespace YazilimTestProje
             forms.Show();
             this.Hide();
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            WalletForm forms = new WalletForm();
+            forms.user = user;
+            forms.Show();
+            this.Hide();
+        }
     }
 }

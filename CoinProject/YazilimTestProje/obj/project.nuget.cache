@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P558O5w8l4MRwfUAHiToKwsNyEvtAe6gv65hE09uta2B02OpaDKKZeJguD3kN8VLeQQ3d75zi6asN9IP1RvaNA==",
+  "dgSpecHash": "z8xGRUe8nNREORgPc+N4hzQnG7ybXCn4sLQhjFRJeiDF6H09THD9sHNbWJjHu8Udw9J1OyZFL+v6qKtyg+oSlA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\obaid\\source\\repos\\CoinProject\\RR\\CoinProject\\YazilimTestProje\\YazilimTestProje.csproj",
+  "projectFilePath": "C:\\Users\\obaid\\source\\repos\\CoinProject\\LV\\CoinProject\\YazilimTestProje\\YazilimTestProje.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\obaid\\.nuget\\packages\\devart.data\\5.0.2938\\devart.data.5.0.2938.nupkg.sha512",
     "C:\\Users\\obaid\\.nuget\\packages\\devart.data.postgresql\\8.0.0\\devart.data.postgresql.8.0.0.nupkg.sha512",
