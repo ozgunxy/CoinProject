@@ -570,11 +570,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\obaid\\source\\repos\\CoinProject\\SS\\CoinProject\\YazilimTestProje\\YazilimTestProje.csproj",
+      "projectUniqueName": "C:\\Users\\obaid\\source\\repos\\CoinProject\\RR\\CoinProject\\YazilimTestProje\\YazilimTestProje.csproj",
       "projectName": "YazilimTestProje",
-      "projectPath": "C:\\Users\\obaid\\source\\repos\\CoinProject\\SS\\CoinProject\\YazilimTestProje\\YazilimTestProje.csproj",
+      "projectPath": "C:\\Users\\obaid\\source\\repos\\CoinProject\\RR\\CoinProject\\YazilimTestProje\\YazilimTestProje.csproj",
       "packagesPath": "C:\\Users\\obaid\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\obaid\\source\\repos\\CoinProject\\SS\\CoinProject\\YazilimTestProje\\obj\\",
+      "outputPath": "C:\\Users\\obaid\\source\\repos\\CoinProject\\RR\\CoinProject\\YazilimTestProje\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

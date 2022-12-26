@@ -49,6 +49,7 @@ namespace YazilimTestProje
                 " ('" + textBox2.Text + "','" + textBox1.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + textBox5.Text + "')");
             MainForm forms = new MainForm();
             User user = new User(textBox2.Text, textBox1.Text);
+            DB.getInstance().executeNonQuery("INSERT INTO wallet (shaadress,userid) VALUES ('" + BitConverter.ToString(user.wallet.Address).Replace("-", "") + "','"+user.UserID+"')");
             forms.user = user;
             forms.Show();
             this.Hide();

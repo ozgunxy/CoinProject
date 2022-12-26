@@ -11,7 +11,7 @@ namespace YazilimTestProje
     {
 
         public static double RecyclecoinOnCarbon { get; set; } = 1000000;
-        public string Name { get; set; } = "Rc";
+        public string Name { get; set; }
         public decimal Value { get; set; }
         public string Owner { get; set; }
         public DateTime CreatedOn { get; set; }

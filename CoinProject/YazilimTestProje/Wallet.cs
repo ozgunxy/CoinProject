@@ -24,6 +24,7 @@ namespace YazilimTestProje
         }
         public void AddCoin(Coin coin)
         {
+            DB.getInstance().executeNonQuery("SELECT * FROM addcoin('" + BitConverter.ToString(Address).Replace("-", "") + "','" + coin.Value + "')");
             Coins.Add(coin);
         }
         public void RemoveCoin(Coin coin)
