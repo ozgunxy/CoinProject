@@ -48,6 +48,7 @@ namespace YazilimTestProje
 
         private void button1_Click(object sender, EventArgs e)
         {
+            mf.user = user;
             mf.Show();
             this.Hide();
         }

@@ -45,7 +45,7 @@ namespace YazilimTestProje
             try
             {
                 
-                PgSqlConnection conn = new PgSqlConnection("User Id=postgres;password=admin;Host=localhost;Port=8081;Database=INFO;Initial Schema=public");
+                PgSqlConnection conn = new PgSqlConnection(constring.conn);
                 PgSqlCommand cmd = new PgSqlCommand("SELECT * FROM usersviews('" + user.UserID + "'); ", conn);
                 PgSqlDataReader reader;
                 conn.Open();

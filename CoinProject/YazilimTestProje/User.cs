@@ -34,7 +34,7 @@ namespace YazilimTestProje
 
         private void UserLogin(string username,string password)
         {
-            PgSqlConnection conn = new PgSqlConnection("User Id=postgres;password=admin;Host=localhost;Port=8081;Database=INFO;Initial Schema=public");
+            PgSqlConnection conn = new PgSqlConnection(constring.conn);
             PgSqlCommand c = new PgSqlCommand("SELECT UserId from public.users where UserLoginId = '" + username + "' ", conn);
             conn.Open();
             int userID = (int)c.ExecuteScalar();

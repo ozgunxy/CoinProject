@@ -23,7 +23,7 @@ namespace YazilimTestProje
 
         private DB()
         {
-            conn = new PgSqlConnection("User Id=postgres;password=admin;Host=localhost;Port=8081;Database=INFO;Initial Schema=public");
+            conn = new PgSqlConnection(constring.conn);
             cmd = new PgSqlCommand("", conn);
             dt = new DataTable();
         }

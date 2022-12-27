@@ -29,7 +29,7 @@ namespace YazilimTestProje
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            PgSqlConnection conn = new PgSqlConnection("User Id=postgres;password=admin;Host=localhost;Port=8081;Database=INFO;Initial Schema=public");
+            PgSqlConnection conn = new PgSqlConnection(constring.conn);
             //PgSqlCommand com = new PgSqlCommand("SELECT * FROM public.Users where UserLoginId = '" + textBox1.Text + "' and UserPassword = '" + textBox2.Text + "'", conn);
             PgSqlDataAdapter add = new PgSqlDataAdapter("SELECT * FROM public.users where UserLoginId = '" + textBox1.Text + "' and UserPassword = '" + textBox2.Text + "'", conn);
             DataTable dt = new DataTable();
